@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.fancave.teamservice";
+option java_outer_classname = "TeamServiceProto";
+option objc_class_prefix = "HLW";
+
+package fancave;
+
+service TeamService {
+  rpc getTeams (TeamRequest) returns (TeamResponse);
+}
+
+message TeamRequest {
+  string league = 1;
+  string team = 2;
+}
+
+message TeamResponse {
+  string teams = 1;
+}
+
+// message Team {
+//   string arena = 1 ;
+//   string city = 2;
+//   string description = 3;
+//   string league = 4;
+//   string logo = 5;
+//   string name = 6;
+//   string shortname = 7;
+//   string lat = 8;
+//   string long = 9;
+// }
+
