@@ -6,7 +6,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/google-protobuf": "^3.7.2",
     "@types/node": "^13.9.1",
-    "async": "^1.5.2",
+    "async": "^2.6.4",
     "google-protobuf": "^3.0.0",
     "grpc": "^1.11.0",
     "grpc-tools": "^1.8.1",
